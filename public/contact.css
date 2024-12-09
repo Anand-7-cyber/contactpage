@@ -1,0 +1,532 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+  
+
+#main{
+    height: 5rem;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    position:fixed;
+}
+
+.mainh2{
+  height: 2rem;
+  width: 21rem;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+ 
+}
+
+.mainbut1{
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1.3rem;
+  margin-left: 46rem;
+  font-weight: bold;
+  border: none;
+  background-color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.mainbut2{
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1.3rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  background-color: whitesmoke;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.mainbut3{
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1.3rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  background-color: whitesmoke;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mainbut4{
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1.3rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  background-color: whitesmoke;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+#main1{
+  height: 48rem;
+  width: 100%; background: linear-gradient(to right, #00f260, #0575e6);
+  color: white;
+ 
+}
+
+.main1h2{
+  height: 2rem;
+  
+  text-align: center;
+   font-family: sans-serif;
+   font-size: 2.6rem;
+   padding-top: 10rem;
+  
+
+
+
+}
+
+.main1p{
+  height: 1rem;
+   text-align: center;
+
+   color: white;
+   font-family: sans-serif;
+   margin-top: 3rem;
+  
+}
+
+/* form wala div */
+
+#formdiv{
+  width: 60rem;
+  height: 33rem;
+  margin-top: -20rem;
+  
+  margin-left: 31rem;
+ display: flex;
+}
+
+.formdiv1{
+  width: 42rem;
+  height:33rem ;
+  background-color: whitesmoke;
+ 
+
+}
+
+.formdiv1h3{
+  font-family:"Open Sans", Arial, sans-serif;
+  color: plum;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+/* ye form me bahrne wla input hai  */
+
+#input1{
+  height: 3.4rem;
+  width: 16rem;
+ margin-top: 3rem;
+ margin-left: 2rem;
+ padding-left: 1rem;
+ font-size: large;
+ outline: none;
+}
+
+#input2{
+  height: 3.4rem;
+  width: 16rem;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  font-size: large;
+  
+  outline: none;
+}
+
+#input3{
+  height: 3.4rem;
+  width: 16rem;
+ flex-direction: column;
+margin-top: 1rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  font-size: large;
+  outline: none;
+}
+
+#input4{
+  height: 3.4rem;
+  width: 16rem;
+margin-top: 1rem;
+padding-left: 1rem;
+font-size: large;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+#input5{
+  height: 9rem;
+  width: 34rem;
+ margin-top: 1rem;
+  margin-left: 2rem;
+  color: rgb(146, 113, 246);
+  padding-left: 1rem;
+  font-size: larger;
+  outline: none;
+}
+
+.input::placeholder{
+  padding-left: 1rem;
+}
+.formdiv1button{
+
+  margin-left: 27rem;
+  margin-top: 1rem;
+  width: 9rem;
+  height: 3.5rem;
+  font-family:"Open Sans", Arial, sans-serif;
+  border: none;
+  border-radius: 75px;
+  color: white;
+  background: linear-gradient(to right, #d600f2, #e6e205);
+  cursor: pointer;
+
+}
+
+/* ye location wla formdiv2 hai */
+.formdiv2{
+   width:20rem ;
+   height: 33rem;
+   background-color: rgb(9, 225, 192);
+}
+
+.formdiv2h3{
+  margin-top: 4rem;
+  margin-left: 3rem;
+  font-family: 
+  "Open Sans", Arial, sans-serif;
+  font-size: 2.5rem;
+  color: white;
+
+
+}
+
+.formdiv2p{
+   margin-left: 3rem;
+   font-family: 
+
+   "Open Sans", Arial, sans-serif;
+
+   font-size: 1rem;
+   line-height: 2.5rem;
+  color: white;
+}
+
+/* social medias wale buttons  */
+
+.fa-brands{
+  margin-left: 2.3rem;
+  color: white;
+}
+
+.socialicons{
+  color: white;
+ 
+}
+
+/* questions wala div */
+
+#questionsdiv{
+  height: 60rem;
+  width: 100%;
+  background-color: rgb(238, 23, 23);
+
+}
+
+.questiondivh2{
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 3rem;
+  font-family: 
+  "Open Sans", Arial, sans-serif;
+}
+
+.questiondivhr{
+  text-align: center;
+  height: 4px;
+  width: 4rem;
+  border: none;
+  color: #00f260;
+ background-color: #00f260;
+ margin-left: 48%;
+ margin-top: 9px;
+}
+
+.questiondivp{
+  margin-left: 33.5%;
+  margin-top: 2rem;
+  line-height: 1.4rem;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.questionsdiv1{
+
+}
+
+.questionsdiv2{
+  
+}
+
+/* ye hai contact input wala div but dusra  wala  */
+
+#div3{
+  width: 100%;
+  height: 50rem;
+  background: linear-gradient(to right, #00f260, #0575e6);
+}
+
+.div3h3{
+  text-align: center;
+  padding-top: 5rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3rem;
+
+}
+
+.div3hr{
+       height: 3px;
+       width: 3rem;
+       margin-left: 49%;
+       background-color: #f2b100;
+       border: none;
+       margin-top: 2rem;
+}
+
+
+.div3p{
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 2rem;
+}
+
+#div3input1{
+  margin-left: 37%;
+  height: 3rem;
+  width: 30rem;
+  margin-top: 3rem;
+  padding-left: 1rem;
+outline: none;
+border: none;
+}
+
+
+#div3input2{
+
+  margin-top: 1rem;
+  margin-left: 37%;
+  height: 3rem;
+  width: 30rem;
+  outline: none;
+  padding-left: 1rem;
+  border: none;
+  color: rgb(30, 255, 0);
+}
+
+
+.div3button{
+  height: 2rem;
+  width: 4rem;
+  height: 4rem;
+  width: 30rem;
+  border: none;
+  color: white;
+  border-radius: 75px;
+  background: linear-gradient(to right, #d600f2, #e6e205);
+  margin-left: 37.4%;
+ cursor: pointer;
+ margin-top: 2rem;
+ font-size: large;
+}
+
+/* ye hai float wala div  */
+
+#div4{
+  height: 31rem;
+  width: 100%;
+  position: absolute;
+  background-color: #0575e6;
+  display: flex;
+  
+
+}
+
+.div4a{
+  width: 33rem;
+  height: 12rem;
+  background-color: white;
+  margin-top: -95px;
+  display: inline;
+  margin-left: 20rem;
+
+}
+
+.div4abutton1{
+  border-radius: 100px;
+  border: none;
+  background-color: whitesmoke;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.div4abutton2{
+
+  height: 2rem;
+  width:8rem;
+  font-size: 1rem;
+top: -60px;
+  margin-left: 6px;
+  position: absolute;
+  font-weight: bold;
+  color: rgb(3, 174, 169);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.div4ap{
+  margin-left: 7rem;
+  position: absolute;
+  margin-top: -30px;
+}
+
+
+.div4b{
+
+  width: 33rem;
+  height: 12rem;
+  background-color: white;
+  margin-top: -95px;
+ 
+  display: inline;
+  margin-left: 13rem;
+}
+
+.div4bbutton1{
+  border-radius: 100px;
+  border: none;
+  background-color: whitesmoke;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.div4bbutton2{
+
+  height: 2rem;
+  width:9rem;
+  font-size: 1rem;
+top: -60px;
+  margin-left: 11px;
+  position: absolute;
+  font-weight: bold;
+  color: rgb(3, 174, 169);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.div4bp{
+  margin-left: 7rem;
+  position: absolute;
+  margin-top: -30px;
+}
+
+.div4h3{
+
+margin-left: ;
+
+}
+
+
+/* ye hai last wala div jisme hai black wala */
+
+#divlast{
+             width: 100;    
+             background-color: black;
+             height: 35rem;
+             display: flex;
+
+}
+
+.divlastp1{
+  color: white;
+  padding-top: 32.5rem;
+  margin-left: 30rem;
+}
+
+
+
+.divlastbutton1{
+  padding-top: 32rem;
+  height: 2rem;
+  width: 7rem;
+  color: #00f260;
+  color: white;
+  background-color: black;
+  
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.divlasthr{
+
+
+ margin-left: 0.2rem;
+ background-color: #d600f2;
+
+ margin-top: 32.5rem;
+ color: gray;
+ height: 15px;
+
+
+ margin-left: 2px;
+ 
+}
+
+.divlastp2{
+  color: white;
+  padding-top: 32.5rem;
+  margin-left: 1rem;
+}
+
+/* social media icons */
+
+
+
+
+.divlastbutton2{
+  margin-top: 32rem;
+  height: 2rem;
+  width:7rem;
+  background-color: black;
+  
+  color: white;
+  border: none;
+  cursor: pointer;
+}
