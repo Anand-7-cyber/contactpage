@@ -15,8 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // MongoDB Connection
-// MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, { dbName: 'conatctform' }) // Replace 'your_database_name' with your MongoDB database name
+mongoose.connect(process.env.MONGO_URI, { dbName: 'contactpage' })
   .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.log('MongoDB connection error:', err));
 
@@ -28,14 +27,12 @@ const SubscriberSchema = new mongoose.Schema({
 
 const Subscriber = mongoose.model('Subscriber', SubscriberSchema);
 
-module.exports = Subscriber; // Export the model for use in other files
-
 // Email Functionality
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'gmail', // Use your email service provider (e.g., Gmail)
   auth: {
-    user: process.env.EMAIL, // Your Gmail ID
-    pass: process.env.EMAIL_PASSWORD, // Your Gmail Password or App Password
+    user: process.env.EMAIL, // Your Gmail ID (from .env)
+    pass: process.env.EMAIL_PASSWORD, // Your Gmail Password or App Password (from .env)
   },
 });
 
@@ -47,7 +44,7 @@ app.post('/send-message', (req, res) => {
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: input3,
+    to: input3, // Recipient email from form
     subject: 'Thank you for contacting us!',
     text: `Hello ${input1} ${input2},\n\nYour message has been received. We will get back to you soon!\n\nMessage: ${input5}\n\nThank you,\nSupport Team`,
   };
@@ -55,10 +52,10 @@ app.post('/send-message', (req, res) => {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log('Email error:', err);
-      res.status(500).send('Failed to send email');
+      return res.status(500).send('Failed to send email');
     } else {
       console.log('Email sent:', info.response);
-      res.status(200).send('Message sent successfully!');
+      return res.status(200).send('Message sent successfully!');
     }
   });
 });
@@ -68,12 +65,19 @@ app.post('/subscribe', async (req, res) => {
   const { name, email } = req.body;
 
   try {
+    // Check if the email already exists in the database
+    const existingSubscriber = await Subscriber.findOne({ email });
+    if (existingSubscriber) {
+      return res.status(400).send('You are already subscribed!');
+    }
+
+    // Save new subscriber
     const newSubscriber = new Subscriber({ name, email });
     await newSubscriber.save();
-    res.status(200).send('Subscription successful!');
+    return res.status(200).send('Subscription successful!');
   } catch (err) {
     console.log('Error saving subscriber:', err);
-    res.status(500).send('Failed to subscribe');
+    return res.status(500).send('Failed to subscribe');
   }
 });
 
