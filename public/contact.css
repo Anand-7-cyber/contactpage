@@ -521,7 +521,7 @@ margin-left: ;
 
 
 .divlastbutton2{
-  margin-top: 32rem;
+ 
   height: 2rem;
   width:7rem;
   background-color: black;
@@ -529,4 +529,410 @@ margin-left: ;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+
+/* ye hai media queriws  */
+
+
+
+@media only screen and (max-width: 420px) {
+  /* Body and background adjustments */
+  body {
+      
+      width: 420px;
+  }
+  
+  /* Navigation bar styling */
+ 
+#main{
+  height: 5rem;
+  width: 420px;
+  background-color: whitesmoke;
+  display: flex;
+  position:fixed;
+}
+
+.mainh2{
+height: 10px;
+width: 20px;
+margin-top: 1.3rem;
+margin-left: 10px;
+text-decoration: none;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 10px;
+
+}
+
+.mainbut1{
+height: 2rem;
+width: 10px;
+margin-top: 1.3rem;
+margin-left: 20px;
+font-weight: bold;
+border: none;
+background-color: whitesmoke;
+
+cursor: pointer;
+font-size: 10px;
+}
+
+
+.mainbut2{
+height: 2rem;
+width: 10px;
+margin-top: 1.3rem;
+font-weight: bold;
+border: none;
+font-size: 10px;
+background-color: whitesmoke;
+margin-left: 25px;
+
+cursor: pointer;
+}
+
+.mainbut5{
+  height: 2rem;
+width: 10px;
+margin-top: 1.3rem;
+font-weight: bold;
+border: none;
+font-size: 10px;
+margin-left: 20px;
+background-color: whitesmoke;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.mainbut3{
+height: 2rem;
+width: 10px;
+margin-top: 1.3rem;
+font-weight: bold;
+border: none;
+font-size: 10px;
+margin-left: 25px;
+background-color: whitesmoke;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.mainbut4{
+height: 2rem;
+width: 10px;
+margin-top: 1.3rem;
+font-weight: bold;
+border: none;
+margin-left: 25px;
+font-size: 10px;
+background-color: whitesmoke;
+
+cursor: pointer;
+}
+
+
+
+  /* Contact section adjustments */
+  #main1{
+    width: 420px;
+    margin: 0;
+
+  }
+  
+  .main1p{
+    font-size: 20px;
+  }
+
+  /* Form section */
+  #formdiv{
+    width: 420px;
+    height: 35rem;
+   
+    
+   display: flex;
+  }
+  
+  .formdiv1{
+    width: 260px;
+    height:35rem ;
+    background-color: whitesmoke;
+    margin-left: -31rem;
+  
+  }
+  
+  .formdiv1h3{
+    font-family:"Open Sans", Arial, sans-serif;
+    color: plum;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  /* ye form me bahrne wla input hai  */
+  
+  #input1{
+    height: 3.4rem;
+    width: 9rem;
+   margin-top: 1rem;
+   margin-left: 2.7rem;
+   padding-left: 1rem;
+   font-size: large;
+   outline: none;
+  }
+  
+  #input2{
+    height: 3.4rem;
+    width: 9rem;
+    margin-left: 2.7rem;
+    padding-left: 1rem;
+    font-size: large;
+    margin-top: 1rem;
+    outline: none;
+  }
+  
+  #input3{
+    height: 3.4rem;
+    width: 9rem;
+   flex-direction: column;
+  margin-top: 1rem;
+    margin-left: 2.7rem;
+    padding-left: 1rem;
+    font-size: large;
+    outline: none;
+  }
+  
+  #input4{
+    height: 3.4rem;
+    width: 9rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  font-size: large;
+    margin-left: 2.7rem;
+    outline: none;
+  }
+  
+  #input5{
+    height: 9rem;
+    width: 9rem;
+   margin-top: 1rem;
+    margin-left: 2.7rem;
+    color: rgb(146, 113, 246);
+    padding-left: 1rem;
+    font-size: larger;
+    outline: none;
+  }
+  
+  .input::placeholder{
+    padding-left: 1rem;
+  }
+  #formdiv1button{
+  
+  
+    margin-top: 10px;
+    width: 6rem;
+    height: 30px;
+    font-family:"Open Sans", Arial, sans-serif;
+    border: none;
+    border-radius: 75px;
+    margin-left: 5rem;
+    display: inline;
+    color: white;
+    background: linear-gradient(to right, #d600f2, #e6e205);
+    cursor: pointer;
+    font-size: 10px;
+  
+  }
+  
+  /* ye location wla formdiv2 hai */
+  .formdiv2{
+     width:160px ;
+     height: 35rem;
+     background-color: rgb(9, 225, 192);
+  }
+  
+  .formdiv2h3{
+    margin-top: 7rem;
+    margin-left: 10px;
+    font-family: 
+    "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+  
+  
+  }
+  
+  .formdiv2p{
+     margin-left: 10px;
+     font-family: 
+  
+     "Open Sans", Arial, sans-serif;
+  
+     font-size: 10px;
+   
+     line-height: 10px;
+    color: white;
+  }
+  
+  /* social medias wale buttons  */
+  
+  .fa-brands{
+    margin-left: 10px;
+    color: white;
+    margin-top: 3rem;
+  }
+  
+  .socialicons{
+    color: white;
+   
+  }
+
+  /* div3 */
+  
+#div3{
+  width: 420px;
+  height: 50rem;
+  background: linear-gradient(to right, #00f260, #0575e6);
+}
+
+.div3h3{
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3rem;
+
+}
+
+.div3hr{
+       height: 3px;
+       width: 3rem;
+       margin-left: 49%;
+       background-color: #f2b100;
+       border: none;
+       margin-top: 2rem;
+}
+
+
+.div3p{
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 2rem;
+}
+
+#div3input1{
+ margin-left: 2rem;
+  height: 3rem;
+  width: 20rem;
+  margin-top: 3rem;
+  padding-left: 1rem;
+outline: none;
+border: none;
+}
+
+
+#div3input2{
+
+  margin-top: 1rem;
+  margin-left: 2rem;
+  height: 3rem;
+  width: 20rem;
+  outline: none;
+  padding-left: 1rem;
+  border: none;
+  color: rgb(30, 255, 0);
+}
+
+
+.div3button{
+  height: 2rem;
+  width: 21rem;
+
+
+  border: none;
+  color: white;
+  border-radius: 75px;
+  background: linear-gradient(to right, #d600f2, #e6e205);
+  margin-left: 2rem;
+ cursor: pointer;
+ margin-top: 2rem;
+ font-size: large;
+}
+
+.h11{
+  text-align: center;
+  background-color: rgb(123, 255, 0);
+}
+  
+  /* Footer section adjustments */
+ 
+
+  #divlast{
+    width: 420px;    
+    background-color: black;
+    height: 2rem;
+    display: flex;
+  
+  }
+  
+  .divlastp1{
+  color: white;
+  font-size: 13px;
+  width: 7rem;
+  margin-left: 2rem;
+  margin-top: 0.6rem;
+  }
+  
+  
+  
+  .divlastbutton1{
+  
+  height: 1rem;
+  width: 8rem;
+  color: #00f260;
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .divlasthr{
+  
+  
+  margin-left: 0.2rem;
+  background-color: #d600f2;
+  
+  
+  color: gray;
+  height: 15px;
+  margin-top: 10px;
+  
+  margin-left: 2px;
+  
+  }
+  
+  .divlastp2{
+  color: white;
+  
+  margin-left: 1rem;
+  font-size: 13px;
+  width: 6rem;
+  margin-top: 0.6rem;
+  }
+  
+  
+  .divlastbutton2{
+   
+    height: 2rem;
+    width:7rem;
+    background-color: black;
+    
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
 }
